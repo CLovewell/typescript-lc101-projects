@@ -11,7 +11,6 @@ export class SpaceLocation {
    }
 
    printDaysToLocation(origin: Spacecraft, destination: SpaceLocation): void {
-       console.log(`${origin.name} will take ${origin.getDaysToLocation(destination.kilometersAway)}
-        to reach ${destination.name}.`);
+       console.log(`${origin.name} will take ${origin.getDaysToLocation(destination.kilometersAway)} to reach ${destination.name}.`);
    }
 }

@@ -8,7 +8,7 @@ var SpaceLocation = /** @class */ (function () {
         this.kilometersAway = kilometersAway;
     }
     SpaceLocation.prototype.printDaysToLocation = function (origin, destination) {
-        console.log("".concat(origin.name, " will take ").concat(origin.getDaysToLocation(destination.kilometersAway), "\n        to reach ").concat(destination.name, "."));
+        console.log("".concat(origin.name, " will take ").concat(origin.getDaysToLocation(destination.kilometersAway), " to reach ").concat(destination.name, "."));
     };
     return SpaceLocation;
 }());
