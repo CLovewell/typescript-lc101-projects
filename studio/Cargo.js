@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.Cargo = void 0;
 var Cargo = /** @class */ (function () {
-    function Cargo(material, mass) {
+    function Cargo(mass, material) {
         this.massKg = mass;
         this.material = material;
     }

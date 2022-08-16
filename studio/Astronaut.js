@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.Astronaut = void 0;
 var Astronaut = /** @class */ (function () {
-    function Astronaut(name, mass) {
+    function Astronaut(mass, name) {
         this.name = name;
         this.massKg = mass;
     }

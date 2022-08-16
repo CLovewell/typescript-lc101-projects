@@ -4,7 +4,7 @@ export class Astronaut implements Payload{
     name: string;
     massKg: number;
 
-    constructor(name: string, mass: number) {
+    constructor(mass: number, name: string) {
         this.name = name;
         this.massKg = mass;
     }
