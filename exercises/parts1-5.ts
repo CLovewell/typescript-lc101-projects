@@ -18,7 +18,7 @@ let kilometersToTheMoon: number = 384400;
 // the function and print the outputs for a Mars trip and a moon trip.
 
 // Part 4: Create a Spacecraft Class
-class Spacecraft {
+export class Spacecraft {
     milesPerKilometer: number = 0.621;
     name: string;
     speedMPH: number;
@@ -37,7 +37,7 @@ class Spacecraft {
 
     printDaysToLocation(location: SpaceLocation) {
         console.log(`${this.name} will take ${this.getDaysToLocation(location.kilometersAway)}
-         to reach ${location.name}.`);
+         days to reach ${location.name}.`);
     }
 }
 

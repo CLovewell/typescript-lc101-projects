@@ -2,6 +2,7 @@
 // URL for the instructions: 
 // https://education.launchcode.org/intro-to-professional-web-dev/chapters/typescript/exercises.html 
 exports.__esModule = true;
+exports.Spacecraft = void 0;
 var SpaceLocation_1 = require("./SpaceLocation");
 // Part 1: Declare (5) Variables With Type
 var kilometersToMars = 225000000;
@@ -25,10 +26,11 @@ var Spacecraft = /** @class */ (function () {
         return daysToLocation;
     };
     Spacecraft.prototype.printDaysToLocation = function (location) {
-        console.log("".concat(this.name, " will take ").concat(this.getDaysToLocation(location.kilometersAway), "\n         to reach ").concat(location.name, "."));
+        console.log("".concat(this.name, " will take ").concat(this.getDaysToLocation(location.kilometersAway), "\n         days to reach ").concat(location.name, "."));
     };
     return Spacecraft;
 }());
+exports.Spacecraft = Spacecraft;
 // Create an instance of the class here:
 var spaceShuttle = new Spacecraft("Determination", 17500);
 // Move your output statements from part 3 here. Update the template literals use the

@@ -1,3 +1,5 @@
+import { Spacecraft } from "./parts1-5.js";
+
 // Paste in the provided code here:
 export class SpaceLocation {
    kilometersAway: number;
@@ -8,8 +10,8 @@ export class SpaceLocation {
       this.kilometersAway = kilometersAway;
    }
 
-   printDaysToLocation(location: SpaceLocation): void {
-       console.log(`${this.name} will take ${this.getDaysToLocation(location.kilometersAway)}
-        to reach ${location.name}.`);
+   printDaysToLocation(origin: Spacecraft, destination: SpaceLocation): void {
+       console.log(`${origin.name} will take ${origin.getDaysToLocation(destination.kilometersAway)}
+        to reach ${destination.name}.`);
    }
 }
